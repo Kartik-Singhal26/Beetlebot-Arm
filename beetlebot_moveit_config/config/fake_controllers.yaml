@@ -1,0 +1,16 @@
+controller_list:
+  - name: fake_beetlebot_arm_controller
+    joints:
+      - j_base_2
+      - j_lower_arm_3
+      - j_upper_arm_3
+      - j_gripper_4
+  - name: fake_beetlebot_gripper_controller
+    joints:
+      - j_gripper_claw_1
+      - j_gripper_claw_2
+initial:  # Define initial robot poses.
+  - group: beetlebot_arm
+    pose: pose_1
+  - group: beetlebot_gripper
+    pose: home

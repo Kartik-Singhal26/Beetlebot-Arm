@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: beetlebot_config
+    relative_path: urdf/beetlebot_config.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/beetlebot_config.srdf
+  CONFIG:
+    author_name: Kartik Singhal
+    author_email: kartiksinghal35@gmail.com
+    generated_timestamp: 1598649821
