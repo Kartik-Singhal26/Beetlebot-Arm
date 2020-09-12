@@ -62,12 +62,12 @@ Secondly, Make sure your PCA9685 driver is hooked-up correctly with the Arduino 
 Check this out: https://learn.adafruit.com/16-channel-pwm-servo-driver/hooking-it-up
 
 Next, To communicate with the driver and ROS we need to setup a ros node for i2c communication. For this install:
-* libi2c-de
+* libi2c-dev
 * ros-i2cpwmboard 
 
 Follow the following commands:
 ```console
-$ sudo apt-get install libi2c-de
+$ sudo apt-get install libi2c-dev
 $ mkdir -p catkin_ws/src
 $ cd ~/catkin_ws/src
 $ git clone https://gitlab.com/bradanlane/ros-i2cpwmboard.git
