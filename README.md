@@ -46,7 +46,7 @@ For simulation purposes, plan and execute motion with Rviz. Use the following co
 $ roslaunch beetlebot_moveit_config demo.launch
 ```
 Now, select a planner of your choice from the OMPL dropdown menu. In the Planning subgroup allow for Use Collision-Aware IK.
-Select the goal state for the robot from under the Query Menu. Since, Gripper and the rest of the arm are separate planning groups, select fot the beetlebot_arm to move the manipulator. Select random valid or predifned poses from the drop down menu. Alternatively use the marker to move the robot. 
+Select the goal state for the robot from under the Query Menu. Since, Gripper and the rest of the arm are separate planning groups, select the beetlebot_arm group to move the manipulator. Select random valid or predifned poses from the drop down menu. Alternatively use the marker to move the robot. 
 
 To run Gazebo Simulation:
 ```console
