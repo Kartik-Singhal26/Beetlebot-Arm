@@ -52,6 +52,9 @@ To run Gazebo Simulation:
 ```console
 $ roslaunch beetlebot_moveit_config gazebo.launch
 ```
+
+![](rviz_motionplanning.gif)
+
 # Task 2: Teleoperation from Host Computer
 Note: I am currently working on Ubuntu 18.04 running on VirtualMachine with a Windows Host. For this task check all possible permissions and connections with the arduino board and see there are no conflicting softwares running.
 
