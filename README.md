@@ -46,7 +46,7 @@ For simulation purposes, plan and execute motion with Rviz. Use the following co
 $ roslaunch beetlebot_moveit_config demo.launch
 ```
 Now, select a planner of your choice from the OMPL dropdown menu. In the Planning subgroup allow for Use Collision-Aware IK.
-Select the goal state for the robot from under the Query Menu. Since, Gripper and the rest of the arm are separate planning groups, select fot the beetlebot_arm to move the manipulaor. Chose <random valid> or from predifned poses from the drop down menu. Alternatively use the marker to move the robot. 
+Select the goal state for the robot from under the Query Menu. Since, Gripper and the rest of the arm are separate planning groups, select fot the beetlebot_arm to move the manipulator. Select random valid or predifned poses from the drop down menu. Alternatively use the marker to move the robot. 
 
 To run Gazebo Simulation:
 ```console
@@ -76,7 +76,8 @@ Make the following changes to the package files:
 * Navigate to the CMakeLists.txt file in catkin_ws/src/ros-i2cpwmboard folder and add i2c to line 22
 The line should look like: target_link_libraries(12cpwm_board ${catkin_LIBRARIES} i2c)
 
-* Include the following code with the headers in the file i2cpwm_controller.cpp in catkin_ws/src/ros-i2cpwmboard_src folder
+* Include the following code with the headers in the file i2cpwm_controller.cpp in catkin_ws/src/ros-i2cpwmboard_src folder:
+
 extern "C"{
 #include <i2c/smbus.h>
 }
@@ -107,8 +108,11 @@ Error:
 $ Failed to open I2C bus /dev/i2c-1
 $ Failed to acquire bus access and./or talk to I2C slave at address 0x40
 ```
-Tried: sudo i2cdetect -y 0
-Returns: No connection shown
+Tried: 
+```console
+$ sudo i2cdetect -y 0
+```
+No connection shown
 
 ## Planned Tasks
 * Blob Detection with OpenCV
